@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
   try {
     const { userId, message } = await req.json();
     if (!userId || !message) {
-      return NextResponse.json({ error: "User ID and message are required" }, { status: 400 });
+      return NextResponse.json({ error: "UserId and message are required" }, { status: 400 });
     }
 
     // Trigger a Pusher event to the user-specific channel

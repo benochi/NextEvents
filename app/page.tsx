@@ -82,7 +82,7 @@ export default function Home() {
               {user.messages.map((msg, index) => (
                 <div
                   key={index}
-                  className="text-sm bg-gray-50 p-2 rounded mb-1 break-words"
+                  className="text-md text-black bg-gray-50 p-2 rounded mb-1 break-words"
                 >
                   {msg}
                 </div>
